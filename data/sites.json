@@ -1,0 +1,34 @@
+[
+  {
+    "url": "https://boards.greenhouse.io/revenuecat",
+    "schema": {
+      "container": "section.level-0",
+      "details": {
+        "Department": { "selector": "h3", "extract": "text", "single": "true" },
+        "Positions": {
+          "container": "div.opening",
+          "details": {
+            "Position Name": {
+              "selector": "a",
+              "extract": "text",
+              "single": "true"
+            },
+            "Location": {
+              "selector": "span.location",
+              "extract": "text",
+              "single": "true"
+            },
+            "Link": {
+              "selector": "a",
+              "extract": "attribute",
+              "attribute_name": "href",
+              "single": "true"
+            }
+          },
+          "extract": "multiple"
+        }
+      },
+      "extract": "multiple"
+    }
+  }
+]
