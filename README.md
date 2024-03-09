@@ -2,6 +2,20 @@
 
 Scrape for jobs.
 
+## Running
+
+You can run it with the current sites.json file in any Python-aware CLI like this:
+
+```
+python app/scraper.py
+```
+
+And it would output this currently:
+
+```
+[{'url': 'https://boards.greenhouse.io/revenuecat', 'data': [{'Department': 'Developer Experience', 'Positions': [{'Position Name': 'Developer Support Engineer', 'Location': 'Remote, Americas', 'Link': '/revenuecat/jobs/5079403004'}]}, {'Department': 'Engineering', 'Positions': [{'Position Name': 'Senior Full-Stack Engineer', 'Location': 'Remote, Americas or EMEA', 'Link': '/revenuecat/jobs/5083022004'}, {'Position Name': 'Senior Mobile SDK Engineer, CoreSDK', 'Location': 'Remote, Americas or EMEA', 'Link': '/revenuecat/jobs/4968387004'}]}]}]
+```
+
 ## Schema
 
 In data/sites.json you can store an array of sites to scrape. Each site is an object with a url and the schema to scrape from that url.
